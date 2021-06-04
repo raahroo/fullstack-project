@@ -18,7 +18,7 @@ const fs = require('fs');
 }) */
 
 //directories
-if (!fs.existsSync('./assets')) {
+/* if (!fs.existsSync('./assets')) {
     fs.mkdir('./assets', (err) => {
         if (err) {
             console.log(err);
@@ -31,5 +31,15 @@ if (!fs.existsSync('./assets')) {
             console.log(err)
         }
         console.log('folder deleted');
+    }) 
+}*/
+
+//deleting files
+if (fs.existsSync('./src/docs/deleteme.txt')) {
+    fs.unlink('./src/docs/deleteme.txt', (err) => {
+        if (err) {
+            console.log(err);
+        }
+        console.log('File deleted');
     })
 }
