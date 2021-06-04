@@ -1,2 +1,2 @@
-const languages = require('./languages');
-console.log(languages);
+const { languages, skills } = require('./languages');
+console.log(languages, skills);

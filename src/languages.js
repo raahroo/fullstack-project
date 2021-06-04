@@ -1,2 +1,7 @@
 const languages = ['portuguese', 'english', 'spanish', 'german', 'norwegian'];
-module.exports = languages;
+const skills = ['running', 'swimming', 'hunting'];
+
+module.exports = {
+    languages,
+    skills,
+};
